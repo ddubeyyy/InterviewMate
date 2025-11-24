@@ -419,5 +419,6 @@ This project is open source and available for educational purposes.
 **Ready to ace your next interview?** 🚀 Start practicing now!
 
 Made with ❤️ using AI and modern web technologies
-#   I n t e r v i e w M a t e  
+#   I n t e r v i e w M a t e 
+ 
  
