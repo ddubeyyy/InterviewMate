@@ -1,0 +1,74 @@
+Build a complete full-stack web app called **InterviewMate**, matching this specification:
+
+====================================================
+PROJECT OVERVIEW  
+====================================================
+InterviewMate is an AI-powered mock interview partner that asks interview questions, evaluates the user's answers, gives feedback, and continues the interview.
+
+It must include:
+
+### 1. BACKEND (Python + FastAPI)
+- Use **FastAPI**.
+- Implement a POST /api/start endpoint:
+  - Input: { "role": string, "persona": string }
+  - Output: { session_id, role, persona, started_at }
+- Implement a POST /api/next endpoint:
+  - Input: { "session_id": string, "user_text": string }
+  - Behavior:
+    - If user_text is empty → return next question.
+    - If user answers → evaluate answer using an LLM.
+    - If answer score < 8 → ask follow-up (from question bank).
+    - If no more questions → generate final summary.
+  - Output: { next_question, followups, feedback, end_session }
+
+### 2. LLM INTEGRATION — USE GROQ (not OpenAI)
+Call Groq API like this:
+
+POST https://api.groq.com/openai/v1/chat/completions  
+Headers: Authorization: Bearer $GROQ_API_KEY  
+Model: llama3-70b-8192  
+
+Include a function call_llm(system_prompt, user_messages).
+
+### 3. QUESTION BANK
+Create a JSON file called question_bank.json with entries for:
+- software_engineer
+- sales
+- retail
+
+Each question: { id, text, followups }
+
+### 4. FRONTEND (React + Vite)
+Inside a "frontend" folder:
+- index.html
+- src/main.jsx
+- src/App.jsx
+- src/index.css
+- package.json
+
+Frontend features:
+- Select role (SE/Sales/Retail)
+- Select persona (neutral/confused/efficient/chatty)
+- Start interview
+- Show chat bubbles (agent+user)
+- Text input + Voice input using browser SpeechRecognition
+- Call backend endpoints
+
+### 5. SERVE FRONTEND FROM BACKEND
+Mount the frontend folder using FastAPI StaticFiles.
+
+====================================================
+PLEASE GENERATE:
+- backend/main.py
+- backend/requirements.txt
+- backend/.env.example (with GROQ_API_KEY=...)
+- backend/question_bank.json
+- frontend/index.html
+- frontend/src/main.jsx
+- frontend/src/App.jsx
+- frontend/src/index.css
+- frontend/package.json
+- README.md
+====================================================
+
+Make sure the code is complete, correct, and ready to run.
