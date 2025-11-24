@@ -3,7 +3,6 @@
 **InterviewMate** is a professional AI-powered mock interview application that provides realistic interview practice with intelligent feedback, resume analysis, and adaptive questioning. Built with FastAPI and React, powered by Groq's ultra-fast LLM inference.
 
 ## ✨ Key Features
-
 ### 🎤 Realistic Interview Experience
 - Live Timer
 - Professional interface
