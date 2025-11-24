@@ -1,41 +1,41 @@
 # 🎯 InterviewMate - AI-Powered Mock Interview Platform
+
 **InterviewMate** is a professional AI-powered mock interview application that provides realistic interview practice with intelligent feedback, resume analysis, and adaptive questioning. Built with FastAPI and React, powered by Groq's ultra-fast LLM inference.
 
 ## ✨ Key Features
 
-### 🎤 **Realistic Interview Experience**
-- **Live Timer**: Track your interview duration in real-time
-- **Professional Interface**: Corporate-styled UI that mimics real video interview platforms
-- **Interviewer Personas**: Practice with different interviewer styles (Professional, Inquisitive, Direct, Friendly)
-- **Dynamic Interviewer Names**: Random interviewer assignment for variety
+### 🎤 Realistic Interview Experience
+- Live Timer
+- Professional interface
+- Interviewer Personas
+- Dynamic interviewer names
 
-### 📄 **Resume-Powered Intelligence**
-- **Resume Upload**: Upload your resume (.txt, .pdf, .doc, .docx)
-- **Contextual Questions**: AI generates personalized questions based on your background
-- **Experience-Based Evaluation**: Feedback tailored to your resume and experience level
-- **Smart Introduction**: Interviewer acknowledges reviewing your background
+### 📄 Resume-Powered Intelligence
+- Upload resume (.txt, .pdf, .doc, .docx)
+- Personalized questions
+- Smart introduction
 
-### 🤖 **AI-Driven Evaluation**
-- **Real-Time Scoring**: Each answer rated 1-10 by Groq's LLM
-- **Constructive Feedback**: Persona-matched feedback after every answer
-- **Adaptive Follow-Ups**: Get additional questions if your answer needs improvement (score < 8)
-- **Conversational Flow**: AI maintains context throughout the interview
+### 🤖 AI-Driven Evaluation
+- Real-time scoring (1–10)
+- Constructive feedback
+- Follow-up questions
+- Natural conversational flow
 
-### 🎙️ **Multiple Input Methods**
-- **Text Input**: Type your answers with keyboard shortcuts (Enter to send)
-- **Voice Input**: Speak your answers using browser speech recognition
-- **Visual Feedback**: Real-time listening indicator during voice input
+### 🎙️ Multiple Input Methods
+- Text input
+- Voice input
+- Real-time listening indicator
 
-### 📊 **Comprehensive Analysis**
-- **Performance Summary**: Detailed analysis of strengths and improvement areas
-- **Interview Transcript**: Full conversation history with scores
-- **Actionable Recommendations**: Specific advice for future interviews
+### 📊 Comprehensive Analysis
+- Performance summary
+- Transcript
+- Recommendations
 
-### 🎨 **Professional Design**
-- Modern, clean interface
-- Responsive layout for all devices
-- Real interview platform aesthetics
-- Smooth animations and transitions
+### 🎨 Professional Design
+- Responsive
+- Clean UI
+- Smooth animations
+
 
 ## 🚀 Getting Started
 
